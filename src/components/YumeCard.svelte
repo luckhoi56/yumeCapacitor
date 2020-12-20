@@ -1,6 +1,7 @@
 <script>
   import { Tile, Button } from "carbon-components-svelte";
   import { Grid, Row, Column } from "carbon-components-svelte";
+  import DetailButton from "./DetailButton.svelte";
 </script>
 
 <style>
@@ -20,7 +21,7 @@
       <br>
       <Row>
         <Column style="text-align:left">
-          <Button  size="small" kind="tertiary">Chi Tiet</Button>    
+          <DetailButton m_content={"I dont know"}></DetailButton>  
         </Column>
         <Column style="text-align:right" >
           <Button  size="small"  kind="tertiary">San Sang</Button>
