@@ -20,6 +20,7 @@
     });
     const json = await res.json()
     console.log(json)
+    document.getElementById(order_number).remove()
   }
 </script>
 
@@ -27,8 +28,8 @@
 
 </style>
 
-<main>
-  <Tile>
+<main >
+  <Tile id={order_number}>
     <Grid>
       <Row>
         <Column style="text-align:center">So Order: {order_number}</Column>
