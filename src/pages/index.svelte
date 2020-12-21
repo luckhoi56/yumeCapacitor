@@ -1,5 +1,7 @@
 <script>
   import YumeCard from "../components/YumeCard.svelte";
+
+  export let name;
   let m_filtered_orders = [];
   async function onButtonTap() {
     const response = await fetch("http://192.168.43.61:4242/getOrder");
@@ -30,6 +32,11 @@
 </style>
 
 <main>
-  <YumeCard></YumeCard>
+  <h1>Hello Eric!</h1>
+  <button text="tap me now" on:click={onButtonTap}>Tap Me</button>
+  {#each m_filtered_orders as order}
+    <YumeCard m_items={order.content} order_number={order.orderNumber}/>
+    
+  {/each}
 
 </main>

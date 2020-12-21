@@ -1,8 +1,7 @@
 <script>
   import { Button, Modal } from "carbon-components-svelte";
-    export let m_content=""
-    export 
-  let open = false;
+  export let m_items = "";
+  export let open = false;
 </script>
 
 <Button size="small" kind="tertiary" on:click={() => (open = true)}>
@@ -10,13 +9,17 @@
 </Button>
 
 <Modal
+  size="xs"
   bind:open
   modalHeading="Chi Tiet"
-  
   secondaryButtonText="Ok"
   on:click:button--secondary={() => (open = false)}
   on:open
   on:close
   on:submit>
-  <p>{m_content}</p>
+  <div>
+    {#each m_items as item}
+      <li>{item.ItemName}:{item.Quantity}</li>
+    {/each}
+  </div>
 </Modal>
