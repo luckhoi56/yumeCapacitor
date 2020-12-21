@@ -26,15 +26,15 @@
 
   <HeaderNav>
     <HeaderNavItem href="/" text="Order Hien Co" />
-    <HeaderNavItem href="/" text="Order Da Xong" />
+    <HeaderNavItem href="/finishOrder" text="Order Da Xong" />
 
   </HeaderNav>
 </Header>
 
 <SideNav bind:isOpen={isSideNavOpen}>
   <SideNavItems>
-    <SideNavLink text="Order Hien Co" />
-    <SideNavLink text="Order Da Xong" />
+    <SideNavLink href="/" text="Order Hien Co" />
+    <SideNavLink href="/finishOrder" text="Order Da Xong" />
   </SideNavItems>
 </SideNav>
 
