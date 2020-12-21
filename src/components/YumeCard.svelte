@@ -12,27 +12,29 @@
   <Tile>
     <Grid>
       <Row>
-        <Column style="text-align:center">OrderNumber</Column>
+        <Column style="text-align:center">Mã Số</Column>
       </Row>
-      <br>
+      <br />
       <Row>
-        <Column style="text-align:center">Customer Name</Column>
+        <Column style="text-align:center">Tên Khách Hàng</Column>
       </Row>
-      <br>
+      <br />
       <Row>
-        <Column style="text-align:left">
-          <DetailButton m_content={"I dont know"}></DetailButton>  
+        <Column style="text-align:center">
+          <DetailButton m_content={'I dont know'} />
         </Column>
-        <Column style="text-align:right" >
-          <Button  size="small"  kind="tertiary">San Sang</Button>
-          
+      </Row>
+      <br />
+      <br />
+      
+      <Row>
+        <Column style="text-align:center">
+          <Button size="small"  kind="danger" >San Sang</Button>
         </Column>
       </Row>
     </Grid>
   </Tile>
 
-
-  <br>
- 
+  <br />
 
 </main>
