@@ -27,6 +27,9 @@
   <HeaderNav>
     <HeaderNavItem href="/" text="Order Hien Co" />
     <HeaderNavItem href="/finishOrder" text="Order Da Xong" />
+    <HeaderNavItem href="/yesterdayOrder" text="Order Hom Qua" />
+    <HeaderNavItem href="/yesterdayOrder" text="Order Hom Qua" />
+    <HeaderNavItem href="/openOrClose" text="Dong/Mo Cua Tiem" />
 
   </HeaderNav>
 </Header>
@@ -35,6 +38,8 @@
   <SideNavItems>
     <SideNavLink href="/" text="Order Hien Co" />
     <SideNavLink href="/finishOrder" text="Order Da Xong" />
+    <SideNavLink href="/yesterdayOrder" text="Order Hom Qua" />
+    <SideNavLink href="/openOrClose" text="Dong/Mo Cua Tiem" />
   </SideNavItems>
 </SideNav>
 

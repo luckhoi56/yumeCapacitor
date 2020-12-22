@@ -4,7 +4,7 @@
   export let name;
   setInterval(function(){
     onButtonTap()
-}, 30000) //every 30 seconds auto run
+}, 10000) //every 10 seconds auto run
   let m_filtered_orders = [];
   async function onButtonTap() {
     const response = await fetch("http://192.168.43.61:4242/getOrder");
