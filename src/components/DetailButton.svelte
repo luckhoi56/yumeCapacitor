@@ -19,7 +19,7 @@
   on:submit>
   <div>
     {#each m_items as item}
-      <li>{item.ItemName}:{item.Quantity}</li>
+      <li> {item.Quantity} {item.chosenSize} {item.ItemName}: {item.chosenTopping} </li>
     {/each}
   </div>
 </Modal>

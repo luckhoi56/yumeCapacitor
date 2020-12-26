@@ -30,6 +30,7 @@
     <HeaderNavItem href="/yesterdayOrder" text="Order Hom Qua" />
     <HeaderNavItem href="/yesterdayOrder" text="Order Hom Qua" />
     <HeaderNavItem href="/openOrClose" text="Dong/Mo Cua Tiem" />
+    <HeaderNavItem href="/reasonToClose" text="Ly Do Dong Cua Tiem" />
 
   </HeaderNav>
 </Header>
@@ -40,6 +41,7 @@
     <SideNavLink href="/finishOrder" text="Order Da Xong" />
     <SideNavLink href="/yesterdayOrder" text="Order Hom Qua" />
     <SideNavLink href="/openOrClose" text="Dong/Mo Cua Tiem" />
+    <SideNavLink href="/reasonToClose" text="Ly Do Dong Cua Tiem" />
   </SideNavItems>
 </SideNav>
 
