@@ -2,16 +2,16 @@
     import { Tile, Button } from "carbon-components-svelte";
     let m_status ="N/A"
     async function open(){
-        const response = await fetch("http://192.168.43.61:4242/openRestaurant")
+        const response = await fetch("http://localhost:4242/openRestaurant")
        // let data = await response.json()
     }
 
     async function close(){
-        const response = await fetch("http://192.168.43.61:4242/closeRestaurant")
+        const response = await fetch("http://localhost:4242/closeRestaurant")
     }
 
     async function checkStatus(){
-        const response = await fetch("http://192.168.43.61:4242/statusRestaurant")
+        const response = await fetch("http://localhost:4242/statusRestaurant")
         let data = await response.json();
         //checkStatus = status.status
         if(data.status == false)
