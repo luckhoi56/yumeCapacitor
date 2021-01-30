@@ -1,7 +1,8 @@
 <script>
   import { Button, TextArea } from "carbon-components-svelte";
   async function sendReasonToClose() {
-    const res = await fetch("http://192.168.43.61:4242/postReasonToClose", {
+    console.log("got clicked")
+    const res = await fetch("http://localhost:4242/postReasonToClose", {
       headers: {
         "Content-Type": "application/json"
       },
