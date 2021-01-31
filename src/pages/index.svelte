@@ -22,12 +22,14 @@
     m_newest_order = m_filtered_orders[m_filtered_orders.length -1].orderNumber
     document.querySelector("audio").play();
     console.log("tap first received")
+    document.getElementsByClassName("pause")[0].style.backgroundColor = 'lightgreen'
   }
   if(m_newest_order != "" && m_newest_order != m_filtered_orders[m_filtered_orders.length -1].orderNumber){ // new order received and the newest is not blank
     document.querySelector("audio").play();
     m_newest_order = m_filtered_orders[m_filtered_orders.length -1].orderNumber
     console.log("tap inside")
     console.log(m_newest_order)
+    document.getElementsByClassName("pause")[0].style.backgroundColor = 'lightgreen'
   }
   
   
@@ -51,7 +53,8 @@ function playAudio() {
 } 
 
 function pauseAudio() { 
-   document.querySelector("audio").pause(); 
+   document.querySelector("audio").pause();
+   document.getElementsByClassName("pause")[0].style.backgroundColor="" 
 } 
 </script>
 
@@ -63,6 +66,7 @@ function pauseAudio() {
 <main>
   <h1>Order cua Khach Hang!</h1>
   <button text="tap me now" on:click={onButtonTap}>Tap Me</button>
+  <button class = "pause" on:click={pauseAudio} type="button">Pause Audio</button>
   {#each m_filtered_orders as order}
     <YumeCard m_items={order.content} order_number={order.orderNumber}/>
     
@@ -76,7 +80,3 @@ function pauseAudio() {
   Your browser does not support the audio element.
 </audio>
 
-<p>Click the buttons to play or pause the audio.</p>
-
-<button on:click={playAudio} type="button">Play Audio</button>
-<button on:click={pauseAudio} type="button">Pause Audio</button> 
