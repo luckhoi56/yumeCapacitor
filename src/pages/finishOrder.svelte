@@ -4,7 +4,7 @@
   export let name;
   let m_filtered_orders = [];
   async function onButtonTap() {
-    const response = await fetch("http://192.168.43.61:4242/getFinishOrder");
+    const response = await fetch("http://localhost:4242/getFinishOrder");
 
     let order_queue = await response.json();
 
