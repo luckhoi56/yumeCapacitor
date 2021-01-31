@@ -19,11 +19,17 @@
 	m_filtered_orders = filtered_order_queue
   //console.log()
   if (m_filtered_orders.length > 0 && m_newest_order ==""){
-    m_newest_order = m_filtered_orders[m_filtered_orders.length -1]
+    m_newest_order = m_filtered_orders[m_filtered_orders.length -1].orderNumber
     document.querySelector("audio").play();
-    
+    console.log("tap first received")
   }
-  console.log("tap tap")
+  if(m_newest_order != "" && m_newest_order != m_filtered_orders[m_filtered_orders.length -1].orderNumber){ // new order received and the newest is not blank
+    document.querySelector("audio").play();
+    m_newest_order = m_filtered_orders[m_filtered_orders.length -1].orderNumber
+    console.log("tap inside")
+    console.log(m_newest_order)
+  }
+  
   
   
   }
