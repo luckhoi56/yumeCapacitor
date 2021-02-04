@@ -68,7 +68,7 @@ function pauseAudio() {
   <button text="tap me now" on:click={onButtonTap}>Tap Me</button>
   <button class = "pause" on:click={pauseAudio} type="button">Pause Audio</button>
   {#each m_filtered_orders as order}
-    <YumeCard m_items={order.content} order_number={order.orderNumber}/>
+    <YumeCard m_items={order.content} order_number={order.orderNumber} customer_name={order.customerName}/>
     
   {/each}
 

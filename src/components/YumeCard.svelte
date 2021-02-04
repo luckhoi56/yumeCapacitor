@@ -4,7 +4,7 @@
   import DetailButton from "./DetailButton.svelte";
   export let order_number=""
   export let m_items=""
-
+  export let customer_name=""
   async function finishOrder(){
     console.log("Cusomter finish is:" +order_number )
     
@@ -36,7 +36,7 @@
       </Row>
       <br />
       <Row>
-        <Column style="text-align:center">Tên Khách Hàng</Column>
+        <Column style="text-align:center">Tên Khách Hàng: {customer_name}</Column>
       </Row>
       <br />
       <Row>
