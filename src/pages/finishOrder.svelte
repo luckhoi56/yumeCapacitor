@@ -35,7 +35,7 @@
   <h1>Order Da Hoan Thanh</h1>
   <button text="tap me now" on:click={onButtonTap}>Tap Me</button>
   {#each m_filtered_orders as order}
-    <YumeCardFinish m_items={order.content} order_number={order.orderNumber}/>
+    <YumeCardFinish m_items={order.content} order_number={order.orderNumber} customer_name={order.customerName}/>
     
   {/each}
 
