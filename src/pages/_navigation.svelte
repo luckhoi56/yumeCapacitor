@@ -28,10 +28,10 @@
     <HeaderNavItem href="/" text="Order Hien Co" />
     <HeaderNavItem href="/finishOrder" text="Order Da Xong" />
     <HeaderNavItem href="/yesterdayOrder" text="Order Hom Qua" />
-    <HeaderNavItem href="/yesterdayOrder" text="Order Hom Qua" />
     <HeaderNavItem href="/openOrClose" text="Dong/Mo Cua Tiem" />
+    <HeaderNavItem href="/dst" text="Daylight Saving Time" />
     <HeaderNavItem href="/reasonToClose" text="Ly Do Dong Cua Tiem" />
-
+    <HeaderNavItem href="/announcement" text="Thong Bao" />
   </HeaderNav>
 </Header>
 
@@ -41,7 +41,9 @@
     <SideNavLink href="/finishOrder" text="Order Da Xong" />
     <SideNavLink href="/yesterdayOrder" text="Order Hom Qua" />
     <SideNavLink href="/openOrClose" text="Dong/Mo Cua Tiem" />
+    <SideNavLink href="/dst" text="Daylight Saving Time" />
     <SideNavLink href="/reasonToClose" text="Ly Do Dong Cua Tiem" />
+    <SideNavLink href="/announcement" text="Thong Bao" />
   </SideNavItems>
 </SideNav>
 
