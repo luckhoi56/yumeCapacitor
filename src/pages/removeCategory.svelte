@@ -1,14 +1,14 @@
 <script>
   import { Button, TextArea } from "carbon-components-svelte";
-  async function sendAnnouncement() {
+  async function sendReasonToClose() {
     console.log("got clicked")
-    const res = await fetch("https://yume-angular.herokuapp.com/postAnnouncement", {
+    const res = await fetch("http://localhost:4242/removeCategory", {
       headers: {
         "Content-Type": "application/json"
       },
       method: "POST",
       body: JSON.stringify({
-        reason: document.querySelector("TextArea").value
+        "Category": document.querySelector("TextArea").value
       })
     });
     document.querySelector("TextArea").value = "";
@@ -24,5 +24,5 @@
     labelText="App description"
     placeholder="Enter a description..."
      />
-  <Button on:click={sendAnnouncement}>Send</Button>
+  <Button on:click={sendReasonToClose}>Send</Button>
 </main>

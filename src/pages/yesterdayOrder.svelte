@@ -4,7 +4,7 @@
   export let name;
   let m_filtered_orders = [];
   async function onButtonTap() {
-    const response = await fetch("http://localhost:4242/getYesterdayOrder");
+    const response = await fetch("https://yume-angular.herokuapp.com/getYesterdayOrder");
 
     let order_queue = await response.json();
 

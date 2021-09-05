@@ -8,7 +8,7 @@
 }, 10000) //every 10 seconds auto run
   let m_filtered_orders = [];
   async function onButtonTap() {
-    const response = await fetch("http://localhost:4242/getOrder");
+    const response = await fetch("https://yume-angular.herokuapp.com/getOrder");
 
     let order_queue = await response.json();
 

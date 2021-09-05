@@ -8,7 +8,7 @@
   async function finishOrder(){
     console.log("Cusomter finish is:" +order_number )
     
-    const res = await fetch("http://localhost:4242/finishOrder",{
+    const res = await fetch("https://yume-angular.herokuapp.com/finishOrder",{
       headers:{
         'Content-Type': 'application/json'
       },

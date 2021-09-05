@@ -32,6 +32,9 @@
     <HeaderNavItem href="/dst" text="Daylight Saving Time" />
     <HeaderNavItem href="/reasonToClose" text="Ly Do Dong Cua Tiem" />
     <HeaderNavItem href="/announcement" text="Thong Bao" />
+    <HeaderNavItem href="/removeCategory" text="Xoa Mon An" />
+    <HeaderNavItem href="/addBackCategory" text="Them Lai Mon An" />
+    <HeaderNavItem href="/getRemovedCategory" text="Mon An Da Xoa" />
   </HeaderNav>
 </Header>
 
@@ -44,6 +47,9 @@
     <SideNavLink href="/dst" text="Daylight Saving Time" />
     <SideNavLink href="/reasonToClose" text="Ly Do Dong Cua Tiem" />
     <SideNavLink href="/announcement" text="Thong Bao" />
+    <SideNavLink href="/removeCategory" text="Xoa Mon An" />
+    <SideNavLink href="/addBackCategory" text="Them Lai Mon An" />
+    <SideNavLink href="/getRemovedCategory" text="Mon An Da Xoa" />
   </SideNavItems>
 </SideNav>
 

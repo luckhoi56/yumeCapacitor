@@ -3,18 +3,18 @@
     import { Tile, Button } from "carbon-components-svelte";
     let m_status ="N/A"
     async function open(){
-        const response = await fetch("http://localhost:4242/getDSTOn")
+        const response = await fetch("https://yume-angular.herokuapp.com/getDSTOn")
         //let m_reply_confirm = await response.json()
     }
 
     async function close(){
-        const response = await fetch("http://localhost:4242/getDSTOff")
+        const response = await fetch("https://yume-angular.herokuapp.com/getDSTOff")
         //let data = await response.json()
     }
 
     async function checkStatus(){
         console.log("check status is clicked on android side")
-        const response = await fetch("http://localhost:4242/getDSTStatus")
+        const response = await fetch("https://yume-angular.herokuapp.com/getDSTStatus")
         let data = await response.json();
         console.log(data)
         //checkStatus = status.status
