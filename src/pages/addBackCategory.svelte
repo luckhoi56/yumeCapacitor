@@ -2,7 +2,7 @@
     import { Button, TextArea } from "carbon-components-svelte";
     async function sendReasonToClose() {
       console.log("got clicked")
-      const res = await fetch("http://localhost:4242/addBackCategory", {
+      const res = await fetch("https://yume-angular.herokuapp.com/addBackCategory", {
         headers: {
           "Content-Type": "application/json"
         },
