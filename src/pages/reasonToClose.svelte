@@ -2,7 +2,7 @@
   import { Button, TextArea } from "carbon-components-svelte";
   async function sendReasonToClose() {
     console.log("got clicked")
-    const res = await fetch("https://yume-angular.herokuapp.com/postReasonToClose", {
+    const res = await fetch("https://fabubackend.de:4141/postReasonToClose", {
       headers: {
         "Content-Type": "application/json"
       },

@@ -3,18 +3,18 @@
     import { Tile, Button } from "carbon-components-svelte";
     let m_status ="N/A"
     async function open(){
-        const response = await fetch("https://yume-angular.herokuapp.com/getDSTOn")
+        const response = await fetch("https://fabubackend.de:4141/getDSTOn")
         //let m_reply_confirm = await response.json()
     }
 
     async function close(){
-        const response = await fetch("https://yume-angular.herokuapp.com/getDSTOff")
+        const response = await fetch("https://fabubackend.de:4141/getDSTOff")
         //let data = await response.json()
     }
 
     async function checkStatus(){
         console.log("check status is clicked on android side")
-        const response = await fetch("https://yume-angular.herokuapp.com/getDSTStatus")
+        const response = await fetch("https://fabubackend.de:4141/getDSTStatus")
         let data = await response.json();
         console.log(data)
         //checkStatus = status.status

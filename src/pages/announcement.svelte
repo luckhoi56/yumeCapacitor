@@ -2,7 +2,7 @@
   import { Button, TextArea } from "carbon-components-svelte";
   async function sendAnnouncement() {
     console.log("got clicked")
-    const res = await fetch("https://yume-angular.herokuapp.com/postAnnouncement", {
+    const res = await fetch("https://fabubackend.de:4141/postAnnouncement", {
       headers: {
         "Content-Type": "application/json"
       },
